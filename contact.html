@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width">
+    <link rel="icon" href="img\favicon.png" type="image/x-icon" />
+    <title>联系</title>
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+
+</html>
+<link rel="stylesheet" type="text/css" href="css\style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container" style="z-index: 2">
+            <nav>
+                <div class="nav-all">
+                    <div class="nav-left">
+                        <ul>
+                            <li><a href="index.html" class="one">首页</a></li>
+                            <li><a href="brief.html" class="two">简介</a></li>
+                            <li><a href="interests.html" class="three">兴趣</a></li>
+                            <li><a href="exp.html" class="four">经历</a></li>
+                            <hr class="fourth" style="opacity: 0;" />
+                        </ul>
+                    </div>
+                    <div class="nav-sep"></div>
+                    <div class="nav-right">
+                        <button class="redbutton" onclick="window.location.href='contact.html'">联系我</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="contact-bg1">
+        <div class="circle1"></div>
+    </div>
+
+    <div class="card-container">
+        <div class="card" data-tilt-scale="1.1">
+            <div class="content-container">
+                <div class="content">
+                    <div class="block1">
+                        <div class="line1">
+                            <h2>随时联系我。</h2>
+                            <h4>Contact me</h4>
+                        </div>
+                        <a href="#">
+                            <embed src="img\arrow-up-right-circle-fill.svg">
+                        </a>
+                    </div>
+                    <div class="block2">
+                        <p><object data="img\envelope.svg" type="image/svg+xml"></object> Email: donotemail@gmail.com
+                        </p>
+                        <p><object data="img\telephone.svg" type="image/svg+xml"></object> Tel: +86-13847569384</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="contact-bg2">
+        <div class="circle2"></div>
+    </div>
+
+
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".card"), {
+            max: 10,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.7,
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width">
+    <link rel="icon" href="img\favicon.png" type="image/x-icon" />
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+    <style>
+        body {
+            min-height: 200vh;
+        }
+    </style>
+</head>
+
+<body onload="init()">
+
+    <header>
+        <div class="container" style="z-index: 5">
+            <nav>
+                <div class="nav-all">
+                    <div class="nav-left">
+                        <ul>
+                            <li><a href="index.html" class="current">首页</a></li>
+                            <li><a href="brief.html" class="two">简介</a></li>
+                            <li><a href="interests.html" class="three">兴趣</a></li>
+                            <li><a href="exp.html" class="four">经历</a></li>
+                            <hr class="first" />
+                        </ul>
+                    </div>
+                    <div class="nav-sep"></div>
+                    <div class="nav-right">
+                        <button class="redbutton" onclick="window.location.href='contact.html'">联系我</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div>
+        <section>
+            <div class="sec sec1">
+                <div class="main">
+                    <div class="hero">
+                        <h2>保持热爱，忠于事实。</h2>
+                        <p>我是刘国傲，一名热爱计算机的大学生，来自东北大学机械工程专业。目前正在创作“利用计算机视觉和机器人技术实现的智能垃圾分类系统”的项目。你可以通过这个站点更加全面地了解我和我的项目。</p>
+                    </div>
+                    <div class="avatar" style="opacity: 0;">
+                        <img src="img\avatar360.png" alt="Avatar">
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec sec2">
+                <div class="main" style="mix-blend-mode: multiply;">
+                    <div class="hero">
+                        <h2>保持热爱，忠于事实。</h2>
+                        <p>我是刘国傲，一名热爱计算机的大学生，来自东北大学机械工程专业。目前正在创作“利用计算机视觉和机器人技术实现的智能垃圾分类系统”的项目。你可以通过这个站点更加全面地了解我和我的项目。</p>
+                    </div>
+                    <div class="avatar">
+                        <img src="img\avatar360.png" alt="Avatar" style="border-radius: 50%;">
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="hero" style="z-index: 0;">
+                    <h2>保持热爱，忠于事实。</h2>
+                    <p>我是刘国傲，一名热爱计算机的大学生，来自东北大学机械工程专业。目前正在创作“利用计算机视觉和机器人技术实现的智能垃圾分类系统”的项目。你可以通过这个站点更加全面地了解我和我的项目。</p>
+                </div>
+                <div class="avatar" style="z-index: 0;">
+                    <img src="img\avatar360.png" alt="Avatar" style="border-radius: 50%;">
+                </div>
+            </div>
+
+            <div class="project-button">
+                <button class="glass-button" onclick="window.location.href='project.html'">查看我的项目<object data="img\arrow-down-circle.svg" type="image/svg+xml" class="icon"></object></button>
+            </div>
+        </section>
+    </div>
+
+    <script type="text/javascript" src="js\better_scroll.js"></script>
+    <script>
+        let sec1 = document.querySelector('.sec1');
+        let sec2 = document.querySelector('.sec2');
+        window.addEventListener('scroll', function() {
+          var value = window.scrollY;
+          sec1.style.clipPath = "circle("+ value * 0.8 + "px at 0 0)"
+          sec2.style.clipPath = "circle("+ value * 0.65 + "px at 100% 100%)"
+        })
+      </script>
+
+</body>
+
+</html>

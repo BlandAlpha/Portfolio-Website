@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width">
+    <link rel="icon" href="img\favicon.png" type="image/x-icon" />
+    <title>经历</title>
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+</head>
+
+<body onload="init()">
+    <header>
+        <div class="container" style="z-index: 2">
+            <nav>
+                <div class="nav-all">
+                    <div class="nav-left">
+                        <ul>
+                            <li><a href="index.html" class="one">首页</a></li>
+                            <li><a href="brief.html" class="two">简介</a></li>
+                            <li><a href="interests.html" class="three">兴趣</a></li>
+                            <li><a href="exp.html" class="current">经历</a></li>
+                            <hr class="fourth" />
+                        </ul>
+                    </div>
+                    <div class="nav-sep"></div>
+                    <div class="nav-right">
+                        <button class="redbutton" onclick="window.location.href='contact.html'">联系我</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="exp-circle-con">
+        <div class="exp-circle"></div>
+    </div>
+    
+    <div class="tl-container">
+        <div class="top-section" style="z-index: 1;">
+            <h2 class="title">我的经历</h2>
+        </div>
+
+        <div class="timeline">
+            
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content-r">
+                    <h2>2001年</h2>
+                    <p>我出生于中国大陆西南方的城市里。我从小就对计算机和机械感兴趣，喜欢拆解和组装各种电子设备和玩具。我在高中时参加了信息学奥林匹克竞赛，并获得了省级一等奖。我也参与了一些机器人设计和制作的项目，例如智能小车和机械臂。
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content-l">
+                    <p>我考入了东北大学的机械工程专业，因为我认为这是一个综合性很强的学科，可以涉及到计算机、电子、物理、数学等多个领域。
+                    </p>
+                    <h2>2019年</h2>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content-r">
+                    <h2>2020年</h2>
+                    <p>我在大一、大二时积极参加了各种课外活动和实践，例如创新创业大赛、国际机器人竞赛、学生科技节等。我也利用课余时间自学了一些编程语言和软件，例如Python、C++、MATLAB、SolidWorks等。
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content-l">
+                    <p>我在大三时获得了国家奖学金，并被推荐到美国麻省理工学院的机器人实验室进行为期三个月的交流访问。在那里，我和导师以及其他同学合作开发了一款基于深度学习的自动驾驶汽车系统，并发表了一篇论文。这次经历让我深刻感受到了计算机和机械的结合所能带来的无限可能。
+                    </p>
+                    <h2>2022年</h2>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content-r">
+                    <h2>2023年</h2>
+                    <p>我现在是大四的学生，正在准备毕业设计和考研。我的毕业设计是关于利用计算机视觉和机器人技术实现的智能垃圾分类系统。
+                    </p>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+        </div>
+
+        <div class="fin" style="z-index: 1;">
+            <div class="fin-title">
+                <h2>想要合作？</h2>
+            </div>
+            <div class="fin-form-container">
+                <form class="fin-form">
+                    <div class="info">
+                        <input type="text" name="user_name" required placeholder="姓名">
+                        <input type="email" name="user_email" required placeholder="电子邮件">
+                    </div>
+                        <textarea cols="20" class="message" name="user_message" required placeholder="告诉我任何事"></textarea>
+                    <button class="glass-button" onclick="window.location.href='#'" style="margin-top: 32px;">发送！<object data="img\send.svg" type="image/svg+xml" class="icon"></object></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js\timeline.js"></script>
+    <script type="text/javascript" src="js\better_scroll.js"></script>
+    <script>
+        let circle1 = document.querySelector('.exp-circle');
+        let title = document.querySelector('.title');
+        window.addEventListener('scroll', function() {
+          var value = window.scrollY;
+          var scale_value = 15 + value * 0.03;
+          var y_value = 50 + value * 0.06;
+          var size_value = 4 + value * 0.005;
+          var rotate_value = - value * 0.1;
+          title.style.fontSize = " "+size_value+"rem"
+          title.style.transform = "rotate3d(1, 0, 0, "+rotate_value+"deg)"
+          circle1.style.clipPath = "circle("+scale_value+"rem at 50vw "+y_value+"vh)"
+        })
+      </script>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width">
+    <link rel="icon" href="img\favicon.png" type="image/x-icon" />
+    <title>兴趣</title>
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+</head>
+
+<body onload="init()">
+    <header>
+        <div class="container" style="z-index: 5">
+            <nav>
+                <div class="nav-all">
+                    <div class="nav-left">
+                        <ul>
+                            <li><a href="index.html" class="one">首页</a></li>
+                            <li><a href="brief.html" class="two">简介</a></li>
+                            <li><a href="interests.html" class="current">兴趣</a></li>
+                            <li><a href="exp.html" class="four">经历</a></li>
+                            <hr class="third" />
+                        </ul>
+                    </div>
+                    <div class="nav-sep"></div>
+                    <div class="nav-right">
+                        <button class="redbutton" onclick="window.location.href='contact.html'">联系我</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="in-circle-container">
+        <div class="in-circle"></div>
+    </div>
+
+    <div class="in-main">
+        <div class="slider-container">
+            <input type="radio" name="slider" class="d-none" id="s1">
+            <input type="radio" name="slider" class="d-none" id="s2" checked>
+            <input type="radio" name="slider" class="d-none" id="s3">
+
+            <div class="cards">
+
+                <label for="s1" id="slide1">
+                    <div class="card">
+                        <img src="img/music.png" alt="music">
+                    </div>
+                </label>
+
+                <label for="s2" id="slide2">
+                    <div class="card">
+                        <img src="img/movie.png" alt="movie">
+                    </div>
+                </label>
+
+                <label for="s3" id="slide3">
+                    <div class="card">
+                        <img src="img/country.png" alt="country">
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <div class="in-main-title">
+            <h2>我所热爱的
+                <div class="mask">
+                    <span data-show>电影。</span>
+                    <span>音乐。</span>
+                    <span>国家。</span>
+                </div>
+            </h2>
+        </div>
+    </div>
+
+    <div class="trans-container"></div>
+
+    <div class="movie-section" style="background: url(img/movie_bg.png); background-size: cover; background-position: center;">
+        <div class="in-title">
+            <h2>电影</h2>
+        </div>
+
+        <div class="slider2">
+            <ul>
+                <li>
+                    <a href="https://movie.douban.com/subject/1889243/" target="_blank"><img src="img\movie.png"
+                            alt="Interstellar"></a>
+                    <p>星际穿越（2014）</p>
+                </li>
+                <li>
+                    <a href="https://movie.douban.com/subject/26258779/" target="_blank"><img src="img\movie1.png"
+                            alt="Guardians of the Galaxy"></a>
+                    <p>银河护卫队3（2023）</p>
+                </li>
+                <li>
+                    <a href="https://movie.douban.com/subject/1652587/" target="_blank"><img src="img\movie2.png"
+                            alt="Avatar"></a>
+                    <p>阿凡达（2009）</p>
+                </li>
+                <li>
+                    <a href="https://movie.douban.com/subject/1292226/" target="_blank"><img src="img\movie3.png"
+                            alt="2001: A Space Odyssey"></a>
+                    <p>2001：太空漫游（1968）</p>
+                </li>
+            </ul>
+        </div>
+
+        <p>我喜欢天马行空的科幻电影。这使我的思维活跃，让我能够从不同的视角看到世界。</p>
+
+    </div>
+
+    <div class="music-section" style="background: url(img/album_bg.png); background-size: cover; background-position: center;">
+        <div class="in-title">
+            <h2>音乐</h2>
+        </div>
+        <div class="player">
+            <div class="album-holder">
+                <a href="https://music.163.com/#/song?id=1322780845" target="_blank"><img src="img\album.png"></a>
+                <h3>thank u, next</h3>
+                <h4>Ariana Grande</h4>
+            </div>
+            <div class="lyrics">
+                <div class="not-playing">
+                    <h2 class="p2">Look what you taught me</h2>
+                    <h2 class="p1">And for that, I say</h2>
+                </div>
+                <div class="playing">
+                    <h2>Thank you, next (Next)</h2>
+                </div>
+                <div class="not-playing">
+                    <h2 class="p1">Thank you, next (Next)</h2>
+                    <h2 class="p2">Thank you, next</h2>
+                    <h2 class="p3">I'm so ******' grateful for my ex</h2>
+                    <h2 class="p4">Thank you, next (Next)</h2>
+                </div>
+            </div>
+        </div>
+
+        <p>我喜欢流行音乐、摇滚音乐以及古典音乐。美妙的旋律与动感的节奏能使我精神百倍。</p>
+    </div>
+
+    <div class="country-section">
+        <div class="container-fluid">
+            <div class="fluid-row">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <div class="title" style="z-index: 3;">
+                                <h2>国家</h2>
+                            </div>
+                            <div class="info">
+                                <h3 style="color: var(--mainBlue);">法国</h3>
+                                <p>法国为共和制国家，采用双首长制进行管辖。其首都巴黎为国际政治、艺术和文化中心，大都会区人口达1,311万，同时为欧洲生产总值最高的都会区。</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="info">
+                                <h3 style="color: var(--mainGreen);">日本</h3>
+                                <p>日本是高度发达的现代化国家，是世界第三大经济体。日本电力、电信基础设施相对完善，高速公路、铁路、航空、海运等交通设施便利，市场规模较大，法律法规和信用体系健全。</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="info">
+                                <h3 style="color: var(--mainOrange);">美国</h3>
+                                <p>美国是高度发达的现代化国家，其国内生产总值居世界首位，具有世界规模最大和最发达的现代化市场经济。美国在市场容量、科技实力、教育创新、劳动生产率等方面稳居全球领先地位。
+                                </p>
+                            </div>
+                            <div class="alt">
+                                <p>这些国家都有着独特的历史与文化，了解他们能够使我的眼界开阔。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="js\slider2.js"></script>
+    <script type="text/javascript" src="js\better_scroll.js"></script>
+    <script>
+        setInterval(function () {
+            const show = document.querySelector('span[data-show]')
+            const next = show.nextElementSibling || document.querySelector('span:first-child')
+            const up = document.querySelector('span[data-up]')
+
+            if (up) {
+                up.removeAttribute('data-up')
+            }
+
+            show.removeAttribute('data-show')
+            show.setAttribute('data-up', '')
+
+            next.setAttribute('data-show', '')
+        }, 2000)
+    </script>
+
+</body>
+
+</html>
