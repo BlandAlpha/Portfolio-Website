@@ -1,5 +1,9 @@
 # Protfolio Website 自我介绍网站
 
+**该仓库已归档**
+
+**This Repo has been archived**
+
 这是2023年春季学期的某选修课大作业。里面用到了HTML, CSS, JavaScript的技术。
 
 **仅作技术探讨，不保证文字内容与图片的真实性！**
